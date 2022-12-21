@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace HerancaComposicao.Enums
 {
-    internal class OrderStatus
+    public enum OrderStatus
     {
+        PENDING_PAYMENT,
+        PROCESSING,
+        SHIPPING,
+        DELIVERED
     }
 }
