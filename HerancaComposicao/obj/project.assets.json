@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matheus.silva\\Documents\\ProjetosPessoais\\CSharp\\HerancaComposicao\\HerancaComposicao\\HerancaComposicao.csproj",
+      "projectUniqueName": "C:\\Users\\matheus.silva\\Documents\\ProjetosPessoais\\CSharp\\enum-composicao-csharp\\HerancaComposicao\\HerancaComposicao.csproj",
       "projectName": "HerancaComposicao",
-      "projectPath": "C:\\Users\\matheus.silva\\Documents\\ProjetosPessoais\\CSharp\\HerancaComposicao\\HerancaComposicao\\HerancaComposicao.csproj",
+      "projectPath": "C:\\Users\\matheus.silva\\Documents\\ProjetosPessoais\\CSharp\\enum-composicao-csharp\\HerancaComposicao\\HerancaComposicao.csproj",
       "packagesPath": "C:\\Users\\matheus.silva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matheus.silva\\Documents\\ProjetosPessoais\\CSharp\\HerancaComposicao\\HerancaComposicao\\obj\\",
+      "outputPath": "C:\\Users\\matheus.silva\\Documents\\ProjetosPessoais\\CSharp\\enum-composicao-csharp\\HerancaComposicao\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\matheus.silva\\AppData\\Roaming\\NuGet\\NuGet.Config",

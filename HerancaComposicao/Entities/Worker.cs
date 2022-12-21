@@ -13,7 +13,7 @@ namespace HerancaComposicao.Entities
         public string Name { get; set; }
         public WorkerLevel Level { get; set; }
         public double BaseSalary { get; set; }
-        public List<HourContract> Contracts { get; set; }
+        public List<HourContract> Contracts { get; set; } = new List<HourContract>();
         public Department Department { get; set; }
 
         public Worker(string name, WorkerLevel level, double baseSalary, Department department)
@@ -21,7 +21,6 @@ namespace HerancaComposicao.Entities
             Name = name;
             Level = level;
             BaseSalary = baseSalary;
-            Contracts = new List<HourContract>();
             Department = department;
         }
 
