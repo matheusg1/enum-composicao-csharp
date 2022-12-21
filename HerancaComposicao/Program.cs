@@ -1,5 +1,4 @@
 ﻿using HerancaComposicao.Entities;
-using HerancaComposicao.Enums;
 using System;
 
 namespace HerancaComposicao
@@ -8,22 +7,27 @@ namespace HerancaComposicao
     {
         static void Main(string[] args)
         {
-            var d1 = new Department("Design");
+            Comment c1 = new Comment("Have a nice trip!");
+            Comment c2 = new Comment("Wow, that's awesome!");
+            
+            Post p1 = new Post(DateTime.Parse("21/06/2018 13:05:44"), "Traveling to New Zealand", "I'm going to visit this wonderful country!", 12);
+            
+            p1.addComment(c1);
+            p1.addComment(c2);
 
-            var level = "MidLevel";
-            var bs = 1200.00;
-            var h1 = new HourContract(new DateTime(2018, 08, 20), 50.00, 20);
-            var h2 = new HourContract(new DateTime(2018, 06, 13), 30.00, 18);
-            var h3 = new HourContract(new DateTime(2018, 08, 25), 80.00, 10);
+            
+            var c3 = new Comment("Good night");
+            var c4 = new Comment("May the Force be with you");
 
-            var w1 = new Worker("Alex", Enum.Parse<WorkerLevel>(level.ToUpper()), bs, d1);
+            Post p2 = new(DateTime.Parse("28/07/2018 23:14:19"), "Good night guys", "See you tomorrow", 5);
 
-            w1.addContract(h1);
-            w1.addContract(h2);
-            w1.addContract(h3);
+            p2.addComment(c3);
+            p2.addComment(c4);
 
-            var data = DateTime.Parse("08/2018");
-            Console.WriteLine(w1.income(data.Year, data.Month));
+            Console.WriteLine(p1);
+            Console.WriteLine();
+            Console.WriteLine(p2);
+
         }
     }
 }

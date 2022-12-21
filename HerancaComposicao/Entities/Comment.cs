@@ -6,13 +6,16 @@ using System.Threading.Tasks;
 
 namespace HerancaComposicao.Entities
 {
-    public class Department
+    public class Comment
     {
-        public string Name { get; set; }
+        public string Text { get; set; }
 
-        public Department(string name)
+        public Comment()
         {
-            Name = name;
+        }
+        public Comment(string text)
+        {
+            Text = text;
         }
 
     }
