@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace HerancaComposicao.Enums
 {
-    public enum OrderStatus : int
+    public enum WorkerLevel
     {
-        PendingPayment,
-        Processing,
-        Shipped,
-        Delivered
+        JUNIOR,
+        MIDLEVEL,
+        SENIOR
     }
 }
