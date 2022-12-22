@@ -1,4 +1,5 @@
 ﻿using HerancaComposicao.Entities;
+using HerancaComposicao.Enums;
 using System;
 
 namespace HerancaComposicao
@@ -7,27 +8,20 @@ namespace HerancaComposicao
     {
         static void Main(string[] args)
         {
-            Comment c1 = new Comment("Have a nice trip!");
-            Comment c2 = new Comment("Wow, that's awesome!");
-            
-            Post p1 = new Post(DateTime.Parse("21/06/2018 13:05:44"), "Traveling to New Zealand", "I'm going to visit this wonderful country!", 12);
-            
-            p1.addComment(c1);
-            p1.addComment(c2);
+            var c1 = new Client("Alex Green", "alex@g.com", (DateTime.Parse("15/03/1985")));
+            var o1 = new Order((Enum.Parse<OrderStatus>("Processing")), c1);
 
-            
-            var c3 = new Comment("Good night");
-            var c4 = new Comment("May the Force be with you");
+            var p1 = new Product("TV", 1000d);
+            var p2 = new Product("Mouse", 40d);
 
-            Post p2 = new(DateTime.Parse("28/07/2018 23:14:19"), "Good night guys", "See you tomorrow", 5);
+            var oi1 = new OrderItem(1, p1.Price, p1);
+           
+            var oi2= new OrderItem(2, p2.Price, p2);
 
-            p2.addComment(c3);
-            p2.addComment(c4);
+            o1.AddItem(oi1);
+            o1.AddItem(oi2);
 
-            Console.WriteLine(p1);
-            Console.WriteLine();
-            Console.WriteLine(p2);
-
+            Console.WriteLine(o1);
         }
     }
 }
